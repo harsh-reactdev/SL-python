@@ -1,4 +1,57 @@
+# HANGMAN GAME
+
 import random
+
+HANGMANPICS = ['''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========''']
 
 fruitList = ['apple', 'mango', 'strawberry', 'watermelon', 'grapes', 'lychee']
 
@@ -7,7 +60,7 @@ blankStr = ''
 guessedWord = ''
 blanklist = []
 guessCount = 0
-remainingGuess = 5
+remainingGuess = 8
 
 # random word selection, the word to be guessed
 def generateWord():
@@ -33,6 +86,9 @@ def init():
 
     generateWord()
     generateBlanks(len(rightWord))
+
+def displayHangman():
+    print(HANGMANPICS[5 - remainingGuess])
 
 def updateGC():
     global guessCount
@@ -89,5 +145,7 @@ def guessWord():
         else:
             print('Wrong guess.!')
             updateRG()
+        
+        displayHangman()
 
 guessWord()
