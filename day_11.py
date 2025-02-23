@@ -13,5 +13,27 @@ d = '''i kid you not, but this one too, is a string, in triple single quotes/'''
 # DAY 12
 # string slicing
 
-print(a[2 : 5])
-print(a[-7:-5]) #negative
+# print(a[2 : 5])
+# print(a[-7:-5]) #slicing starts from the last index (-1)
+
+# Day 14
+# If Else
+
+# age = int(input('Enter your age : '))
+age = 18
+
+if age >= 18:
+    print('You can drive.!')
+else:
+    print('You cannot drive.')
+
+# ---------------------------------------   
+
+num = int(input('Enter a number : '))
+
+if num < 0:
+    print('Number is negative')
+elif num == 0:
+    print('The number is zero')
+else:
+    print('The number is even')
