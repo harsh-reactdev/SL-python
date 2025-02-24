@@ -37,3 +37,13 @@ elif num == 0:
     print('The number is zero')
 else:
     print('The number is even')
+
+# Day 15
+time = int(input("what is the time now ? "))\
+
+if time < 12:
+    print('Good morning, Senor.!')
+elif time > 12 and time < 16:
+    print('Good noon, Senor.!')
+else:
+    print('Good evening, Master.!')
