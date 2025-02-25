@@ -15,3 +15,5 @@ checkAll = all([1, 1 , 1 , 1, 1, 1]) #all values are truthy. So returns True
 # print(checkAll)
 checkAll = all([1, 1 , 1 , 1, 0, 1]) #one of the values is falsy. So returns False
 # print(checkAll)
+
+#-------------------------------------------------------------------------
