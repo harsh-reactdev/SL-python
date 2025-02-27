@@ -17,3 +17,15 @@ checkAll = all([1, 1 , 1 , 1, 0, 1]) #one of the values is falsy. So returns Fal
 # print(checkAll)
 
 #-------------------------------------------------------------------------
+x = 10
+xtype = isinstance(x, int) # returns True if x is of type int
+
+#-------------------------------------------------------------------------
+import math
+
+mathTest1 = math.sqrt(4)
+mathTest2 = math.log10(20)
+mathTest3 = math.factorial(5)
+
+#-------------------------------------------------------------------------
+
