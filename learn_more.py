@@ -29,3 +29,5 @@ mathTest3 = math.factorial(5)
 
 #-------------------------------------------------------------------------
 
+def testFunction():
+    pass #dont do anything, simply return and continue execution of rest of the code
