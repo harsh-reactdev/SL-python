@@ -14,6 +14,3 @@ print(tuple(listA))
 
 tup3 = tup + tuple(listA)
 print(tup3)
-
-
-
