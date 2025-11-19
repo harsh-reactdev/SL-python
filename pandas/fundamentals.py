@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.DataFrame(
+df1 = pd.DataFrame(
     {
         "Name": [
             "Braund, Mr. Owen Harris",
@@ -12,12 +12,12 @@ df = pd.DataFrame(
     }
 )
 
-# print(df) # prints the data frame
-# print(df['Age']) # prints only the age column
+# print(df1) # prints the data frame
+# print(df1['Age']) # prints only the age column
 
 pd.Series([45, 23, 109], name='Age')
 
-age = df.describe()
+age = df1.describe()
 print(age)
 
 # ------------------------------------------
@@ -27,4 +27,12 @@ df = pd.DataFrame(data)
 
 # print(df)
 # print(df.dtypes) // prints all datatypes of columns of the dataframe
+
+# print(df.info) prints out the technical information about the dataframe
+
+# ---------------------------------------------------------------------------------------
+# SELECTING SUBSETS OF A DATAFRAME
+
+
+
 
