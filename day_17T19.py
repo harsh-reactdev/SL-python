@@ -76,4 +76,4 @@ if npRange > 1:
             # print(i) prints all primes
             primes.append(i)
             
-# print(f"Primes : {primes}\n Non Primes : {nonPrimes}")
+# print(f"Primes : {primes}\n Non Primes : {nonPrimes}") 
