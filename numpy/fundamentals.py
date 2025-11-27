@@ -1,6 +1,6 @@
 import numpy as np
 
-narr = np.array([[1., 0., 0.], [0., 1., 2.]])
+narr = np.array([[1.0, 0.0, 0.0], [0.0, 1.0, 2.0]])
 narr2 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 
 # print(narr.ndim) #prints out the number of dimensions (axes) of the np array -- 2
@@ -16,13 +16,9 @@ mv = memoryview(narr2.data)
 
 # -----------------------------------------------------------------------------------------------------------------------
 
-narr3 = np.array((1, 2, 4, 5, 6), 
-                 dtype=int,
-                 copy=True,
-                 order='F',
-                 subok=False,
-                 ndmin=1,
-                 like=None)
+narr3 = np.array(
+    (1, 2, 4, 5, 6), dtype=int, copy=True, order="F", subok=False, ndmin=1, like=None
+)
 # print(narr3)
 
 # narr4 = np.copy(narr3)
@@ -39,17 +35,17 @@ narr7 = np.empty((2, 3), dtype=float)
 
 # -----------------------------------------------------------------------------------------------------------------------
 
-narr8 = np.array([
-    [3, 5, 6],
-    [89,1, 24],
-    [66, 21, 17]
-])
+narr8 = np.array([[3, 5, 6], [89, 1, 24], [66, 21, 17]])
 
-narr9 = np.sort(narr8) # returns the sorted array; returns flattened sorted array if axis is set to None
-narr10 = np.argsort(narr8) # returns an array of indices of the same shape as a that index data along the given axis in sorted order.
+narr9 = np.sort(
+    narr8
+)  # returns the sorted array; returns flattened sorted array if axis is set to None
+narr10 = np.argsort(
+    narr8
+)  # returns an array of indices of the same shape as a that index data along the given axis in sorted order.
 # print(narr10)
 
-narr11 = np.concatenate((narr2, narr8)) #concatenates arrays of same shape; if axis=None, the arrays are flattened first and then concatenated
+narr11 = np.concatenate(
+    (narr2, narr8)
+)  # concatenates arrays of same shape; if axis=None, the arrays are flattened first and then concatenated
 # print(narr11)
-
-
